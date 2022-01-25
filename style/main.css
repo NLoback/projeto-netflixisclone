@@ -1,0 +1,65 @@
+/*declaracao de variaveis em css*/
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*garante que todos os elementos terão o mesmo tamanho*/
+}
+
+body {
+    background: var(--preta);
+    font-family: 'times new roman', times, serif;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+
+}
+
+/*efeito quando passa o mouse sobre o menu*/
+header nav a:hover {
+    color: #fff;
+}
+
+/*filme principal destaque*/
+.filme-principal {
+    font-size: 15px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/img/eternos-fundo.jpg)no-repeat center center fixed;
+
+
+    background-size: cover;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
