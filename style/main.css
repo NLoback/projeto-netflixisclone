@@ -11,12 +11,12 @@
     /*garante que todos os elementos terão o mesmo tamanho*/
 }
 
+/*elementos base*/
 body {
     background: var(--preta);
     font-family: 'times new roman', times, serif;
     color: white;
-    height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 
 header .container {
@@ -26,12 +26,7 @@ header .container {
     justify-content: space-between;
 
 
-}
 
-header nav a {
-    text-decoration: none;
-    color: #aaa;
-    margin-right: 10px;
 
 }
 
@@ -43,6 +38,12 @@ header .logo {
 
 }
 
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
 /*efeito quando passa o mouse sobre o menu*/
 header nav a:hover {
     color: #fff;
@@ -51,15 +52,79 @@ header nav a:hover {
 /*filme principal destaque*/
 .filme-principal {
     font-size: 15px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/img/eternos-fundo.jpg)no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/img/osamaranking.jfif)no-repeat center center fixed;
 
-
-    background-size: cover;
     height: 400px;
+    background-size: cover;
+
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'times new roman';
+
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'arial';
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+
+}
+
+.carrosel-filmes {
+    margin-top: 3px;
+}
+
+.sub1 {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding-left: 20px;
+    font-family: arial;
 
 }
